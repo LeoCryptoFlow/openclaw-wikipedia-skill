@@ -5,6 +5,7 @@ A collection of skills for OpenClaw that includes:
 1. Wikipedia Skill - Search Wikipedia and retrieve article summaries in multiple languages
 2. Gmail Skill - Manage Gmail inbox, read emails, and search messages
 3. Speech-to-Text Skill - Convert audio files to text
+4. Gomoku Game Skill - Play a five-in-a-row (Gomoku) game in the terminal
 
 ## Wikipedia Skill
 
@@ -125,6 +126,40 @@ python3 {baseDir}/scripts/stt_converter.py audio_file.mp3 --api google_en
 
 # Install dependencies
 python3 {baseDir}/scripts/stt_converter.py --install-deps
+```
+
+## Gomoku Game Skill
+
+### Features
+
+- Play Gomoku (five-in-a-row) in the terminal
+- Two-player turn-based gameplay
+- Win detection for horizontal, vertical, and diagonal lines
+- Customizable board size
+- Visual representation of the game board
+
+### Installation
+
+#### Method 1: Using the .skill file
+
+1. Download the `gomoku_game.skill` file from releases
+2. Place it in your OpenClaw skills directory
+3. Restart OpenClaw
+
+#### Method 2: Manual installation
+
+1. Clone this repository
+2. Copy the `gomoku_game` folder to your OpenClaw skills directory
+3. Install dependencies: `pip3 install numpy`
+
+### Usage
+
+```bash
+# Start the game
+python3 {baseDir}/scripts/gomoku.py
+
+# Follow the on-screen prompts to play
+# Input format: row column (e.g., "7 7" for position H8)
 ```
 
 ## License
