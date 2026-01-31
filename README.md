@@ -4,6 +4,7 @@ A collection of skills for OpenClaw that includes:
 
 1. Wikipedia Skill - Search Wikipedia and retrieve article summaries in multiple languages
 2. Gmail Skill - Manage Gmail inbox, read emails, and search messages
+3. Speech-to-Text Skill - Convert audio files to text
 
 ## Wikipedia Skill
 
@@ -88,6 +89,42 @@ python3 {baseDir}/scripts/gmail_basic.py list "from:someone@example.com" 5
 
 # List unread emails
 python3 {baseDir}/scripts/gmail_basic.py unread 10
+```
+
+## Speech-to-Text Skill
+
+### Features
+
+- Convert various audio formats to text
+- Support for multiple languages (Chinese and English)
+- Integration with Google's Web Speech API
+- Command-line interface for easy use
+
+### Installation
+
+#### Method 1: Using the .skill file
+
+1. Download the `speech-to-text.skill` file from releases
+2. Place it in your OpenClaw skills directory
+3. Restart OpenClaw
+
+#### Method 2: Manual installation
+
+1. Clone this repository
+2. Copy the `speech-to-text` folder to your OpenClaw skills directory
+3. Install dependencies: `pip3 install SpeechRecognition pydub`
+
+### Usage
+
+```bash
+# Transcribe an audio file (default to Chinese recognition)
+python3 {baseDir}/scripts/stt_converter.py audio_file.mp3
+
+# Transcribe with English recognition
+python3 {baseDir}/scripts/stt_converter.py audio_file.mp3 --api google_en
+
+# Install dependencies
+python3 {baseDir}/scripts/stt_converter.py --install-deps
 ```
 
 ## License
