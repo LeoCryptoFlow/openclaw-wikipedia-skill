@@ -1,0 +1,29 @@
+{
+  "name": "openclaw-wikipedia-skill",
+  "version": "1.0.0",
+  "description": "A skill for OpenClaw that allows searching Wikipedia and retrieving article summaries in multiple languages",
+  "main": "skills/wikipedia/SKILL.md",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/openclaw-wikipedia-skill.git"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "wikipedia",
+    "search",
+    "multilingual"
+  ],
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "dependencies": {
+    "requests": "^2.28.0"
+  }
+}
